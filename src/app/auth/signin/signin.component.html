@@ -1,0 +1,39 @@
+ <mat-grid-list cols="4" rowHeight="300px">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <mat-card *ngIf="!isLoading" style="width: 400px;">
+  <form
+  [formGroup]="myform"
+  (submit)="onLogin()">
+      <mat-form-field style="width: 100%;">
+          <input
+          matInput
+          name="EmailInput"
+          type="email"
+          placeholder="Username"
+          formControlName="inputUsername"
+          >
+          <!-- <mat-error *ngIf="myform.controls.inputUsername.invlaid">Plase Enter Valid Email</mat-error> -->
+        </mat-form-field>
+        <mat-form-field style="width: 100%;">
+          <input
+          matInput
+          type="password"
+          name="PasswordInput"
+          placeholder="Password"
+          formControlName="inputPassword"
+          >
+          <!-- <mat-error *ngIf="myform.controls.inputPassword.invlaid">Please Enter Valid Password</mat-error> -->
+        </mat-form-field>
+        <button
+        mat-raised-button
+        color="accent"
+        type="submit"
+        >LOGIN</button>
+        
+  </form>
+</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+ </mat-grid-list>
+

@@ -1,0 +1,147 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.company {
+  min-height: 17px;
+  flex: 1 1 auto;
+  color: white;
+}
+
+.defaultCompany {
+   margin-right: 10px;
+   margin-left: 300px;
+   color: white;
+}
+
+.round {
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  
+}
+
+.itemCode {
+      color: black;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.emerson-header {
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.sidbarcard {
+  background: #F5F5F5;
+  padding-left: 0;
+  padding-right: 0;
+  overflow-y : scroll;
+  height: 730px;
+  overflow-x:hidden;
+  padding-bottom: 40px;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.greenColor {
+  background-color: green;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.greenColorleft {
+  background-color: green;
+}
+
+.radioButton {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  padding-top: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card-header {
+  text-align: center;
+  padding: 0;
+  background-color: none;
+  border-bottom: none;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+
+.round {
+  background: red;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+  /* font-weight: bold; */
+  width: 30px;
+}
+
+.roundDescription {
+  background: red;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+  /* font-weight: bold; */
+  width: 30px;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.item {
+  padding-top: 10px;
+}
+
+.item-details {
+  line-height: 0;
+  font-size: 0.775em;
+}
+
+.card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 0;
+  font-size: 0.775em;
+}
+
+.card-body-left {
+  padding: 10px;
+  font-size: 0.875em;
+}
+
+.mainContent {
+  padding-left: 0;
+}
+
+.mainContent h4 {
+  padding: 10px;
+  
+}
+
+tr {
+  font-size: 12px;
+   font-weight: 400;
+}
+
+.rowstylingleft {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+

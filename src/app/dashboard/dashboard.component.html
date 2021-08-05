@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Emerson</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="border: none;">
+    LOGOUT
+  </button>
+  
+</mat-toolbar>
+
+<ul class="tsw-tabs tsw-4tab" style="margin-top: 20px;">
+  <li [class.active]="tabNumber === tabNumberArray[0]" (click)="tabSwitchFn(tabNumberArray[0]);"> 
+  OPEN MRIR DETAIL
+  </li>
+  <li [class.active]="tabNumber === tabNumberArray[1]" (click)="tabSwitchFn(tabNumberArray[1]);"> 
+  CLOSE MRIR DETAIL
+  </li>
+</ul>
+
+<div class="tab-content" *ngIf="tabNumber === tabNumberArray[0]">
+      <mat-card *ngFor="let item of item_list" style="border-radius: 10px; margin: 30px;">
+      <p>Item : {{ item.item }}</p>
+      <p>Heat : {{ item.heat }}</p>
+      <p>rt : {{ item.rt }}</p>
+      <p>Qty : {{ item.quantity }}</p>
+      <p>Receved : {{ item.receved }}</p>
+      <p>Location : {{ item.location }}</p>
+      </mat-card>
+</div>
+
+  <div class="tab-content" *ngIf="tabNumber === tabNumberArray[1]">
+     <mat-card *ngFor="let item of item_list" style="border-radius: 10px; margin: 30px;">
+      <p>Item : {{ item.item }}</p>
+      <p>Heat : {{ item.heat }}</p>
+      <p>rt : {{ item.rt }}</p>
+      <p>Qty : {{ item.quantity }}</p>
+      <p>Receved : {{ item.receved }}</p>
+      <p>Location : {{ item.location }}</p>
+      </mat-card>
+  </div>
